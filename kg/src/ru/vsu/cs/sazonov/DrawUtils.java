@@ -1,5 +1,7 @@
 package ru.vsu.cs.sazonov;
 
+import ru.vsu.cs.sazonov.Fruit.Fruit;
+
 import java.awt.*;
 
 public class DrawUtils {
@@ -16,4 +18,5 @@ public class DrawUtils {
             gr.drawLine((int) x1, (int) y1, (int) x2, (int) y2);
         }
     }
+
 }
