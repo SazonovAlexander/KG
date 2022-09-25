@@ -120,7 +120,7 @@ public class DrawPanel extends JPanel {
             @Override
             public void run() {
                 if(fr.getScale() < 1){
-                    fr.setScale(fr.getScale() + 0.1);
+                    fr.setScale(fr.getScale() + 0.05);
                     repaint();
                 }
                 else {
@@ -152,9 +152,9 @@ public class DrawPanel extends JPanel {
         TimerTask task = new TimerTask() {
             @Override
             public void run() {
-                if (fr.getY() != i){
+                if (fr.getY() < i){
                     repaint();
-                    fr.setY(fr.getY()+1);}
+                    fr.setY(fr.getY()+2);}
                 else {
                     this.cancel();
                     timer.schedule(task1, 0, 50);
