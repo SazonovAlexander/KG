@@ -51,7 +51,7 @@ public class Tree {
         Random rnd = new Random();
         int width = height/3;
         g2d.setColor(new Color(80,50,50));
-        g2d.fillRect(x-width/2,y,width,height);
+        g2d.fillRect(x-width/2/3,y,width/3,height);
         g2d.setColor(color);
         g2d.fillOval(x,y,width,width);
         g2d.fillOval(x-width,y,width,width);
