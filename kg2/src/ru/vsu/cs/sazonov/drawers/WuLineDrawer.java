@@ -29,7 +29,7 @@ public class WuLineDrawer implements LineDrawer{
         if (Dy < Dx) {
             int e = 2 * Dy - Dx;
             for (int i = 1; i <= Dx; i++) {
-                d = -1F * e / (Dy + Dx) / 1.1F;
+                d = -1F * Math.abs(e) / (Dy + Dx) / 1.15F;
                 if (e >= 0) {
                     c1 = setColor (1F / 2 - d);
                     c2 = setColor (1F / 2 + d);
@@ -50,7 +50,7 @@ public class WuLineDrawer implements LineDrawer{
         else {
             int e = 2 * Dx - Dy;
             for (int i = 1; i <= Dy; i++) {
-                d = -1F * e / (Dy + Dx) / 1.1F;
+                d = -1F * Math.abs(e) / (Dy + Dx) / 1.15F;
                 if (e >= 0) {
                     c1 = setColor (1F / 2 - d);
                     c2 = setColor (1F / 2 + d);
