@@ -40,7 +40,10 @@ public class DrawPanel extends JPanel {
         addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
-
+               /* x1 = e.getX();
+                y1 = e.getY();
+                if (x1 < getWidth() && y1<getHeight())
+                    repaint();*/
             }
 
             @Override
